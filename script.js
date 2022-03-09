@@ -1,5 +1,18 @@
 import Contacts from "./contacts.js";
 
+const navBarShow = () => {
+    const Navbar = document.querySelector('.nav')
+
+    window.onscroll = () => {
+        if(window.scrollY > 100) {
+            Navbar.classList.add('on')
+        } else {
+            Navbar.classList.remove('on')
+        }
+    }
+}
+navBarShow()
+
 const contactsInit = () => {
     const homeContacts = document.querySelector('.home-contacts')
 
