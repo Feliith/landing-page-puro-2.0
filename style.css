@@ -360,6 +360,7 @@ body {
     width: 100%;
     height: 800px;
     position: relative;
+    overflow: hidden;
 }
 
 .gallery-text {
@@ -498,7 +499,7 @@ body {
 
 .dev {
     background: rgba(0, 0, 0, 0.151);
-    height: 600px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -546,23 +547,10 @@ body {
     transform: scale(.96);
 }
 
-.dev .hexagon {
-    bottom: -90px;
-    left: -120px;
-}
-
-@media screen and (max-width: 800px) {
-    .dev .hexagon {
-        left: -200px;
-    }
-}
 
 @media screen and (max-width: 600px) {
     .dev {
         height: 700px;
-    }
-    .dev .hexagon {
-        left: -280px;
     }
     .dev-text {
         padding: 22px;
