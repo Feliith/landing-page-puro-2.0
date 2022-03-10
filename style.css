@@ -357,6 +357,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
     height: 800px;
     position: relative;
 }
@@ -470,14 +471,18 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .gallery {
+        height: 1000px;
+        padding-top: 0;
+    }
     .gallery-images-wrap {
         margin: 6px;
     }
     .gallery-images-wrap:nth-child(4) {
-        bottom: 112px;
+        bottom: 180px;
     }
     .gallery-link {
-        bottom: 46px;
+        bottom: 120px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -511,7 +516,6 @@ body {
     color: var(--primary);
     font-size: 20px;
     font-weight: 500;
-    filter: brightness(90%);
 }
 
 .dev-text h2 {
