@@ -30,13 +30,12 @@ const Menu = () => {
     const navLinks = document.querySelector('.nav-links')
 
     const navBurger = document.querySelector('.nav-burger')
-    const navClose = document.querySelector('.nav-close')
 
     navBurger.onclick = () => {
         navLinks.classList.add('on')
     }
 
-    navClose.onclick = () => {
+    navLinks.onclick = () => {
         navLinks.classList.remove('on')
     }
 
